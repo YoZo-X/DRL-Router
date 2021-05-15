@@ -43,7 +43,7 @@ This is an implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-Ro
 
   X = DRL_C51.Xtates(Map_1, num_atoms=51)
   agent = DRL_C51.DRL_Agent(X, Map, 15)
-  agent.update_V(-2000, 0)
+  agent.update_V(-200, 0)
   agent.dynamic_lr = 1
   agent.lr_rate = 0.01
   agent.K = 5
