@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import cvxopt
 from cvxopt import glpk
-import os
 from scipy import stats
 from scipy.stats import ortho_group
 from heapq import heapify, heappush, heappop

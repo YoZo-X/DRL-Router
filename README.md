@@ -1,6 +1,6 @@
 # DRL-Router
 
-This is an implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-Router is a method based on distributional reiforcement learning for RSP problem.
+This is an implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-Router is a method based on distributional reinforcement learning for RSP problem.
 
 ## Table of Contents
 - [DRL-Router](#drl-router)
