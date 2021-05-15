@@ -8,10 +8,10 @@ This is an implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-Ro
   - [How to use](#how_to_use)
   - [Template](#template)
 
-## 1.Requirements
+### 1.Requirements
   Python 3.7, numpy, cvxopt, scipy, heapq, networkx and other common packages.
 
-## 2. How to use
+### 2. How to use
   **step 1**: Create a Map, then extract transcanction data or make a data by yourself;
 
   **step 2**: Create a Xtate based on the Map that is created on **step 1**;
@@ -24,7 +24,7 @@ This is an implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-Ro
 
    **step 6**: We can finally start the training of the Agent, we need to set the training parameters num_iterations, obj(define RSP problem) and parameter(different parameter for different RSP problem). When the training was over we got a *Policy*. The more training times, the more accurate the *Policy* results will be.
 
-## 3. Template
+### 3. Template
   The following is an example of how to configure a DRL-Router：
   ```Python
   import DRL_C51
