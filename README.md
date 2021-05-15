@@ -4,18 +4,13 @@ This is an implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-Ro
 
 ## Table of Contents
 - [DRL-Router](#drl-router)
-  - [Install](#install)
+  - [Requirements](#requirements)
   - [How to use](#how_to_use)
   - [Template](#template)
 
 
-## 1.Install
-  numpy  
-  pandas  
-  cvxopt  
-  scipy  
-  heapq  
-  networkx  
+## 1.Requirements
+  Python 3.7, numpy, cvxopt, cvxopt, scipy, heapq, networkx and other common packages.
   
 ## 2. How to use
   **step 1**: Create a Map, then extract transcanction data or make a data by yourself;
@@ -31,13 +26,21 @@ This is an implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-Ro
    **step 6**: We can finally start the training of the Agent, we need to set the training parameters num_iterations, obj(define RSP problem) and parameter(different parameter for different RSP problem). When the training was over we got a *Policy*. The more training times, the better more accurate the *Policy* results will be. 
    
 ## 3. Template
+  The following is an example of how to configure a DRL-Router：
   ```Python
   import DRL_C51
   import func
 
-  Map = func.Map()
-  Map.extract_map(0)
-  Map.G = func.convert_map2graph(Map)
+  Map_Name = "SiouxFalls"
+
+  Map_id = {"SiouxFalls": 0,
+            "Anaheim": 2,
+            "Winnipeg": 3,
+            "Barcelona": 4}
+
+  Map_1 = func.Map()
+  Map_1.extract_map(Map_id[Map_Name])
+  Map_1.G = func.convert_map2graph(Map_1)
   
   X = DRL_C51.Xtates(Map_1, num_atoms=51)
   agent = DRL_C51.DRL_Agent(X, Map, 15)
