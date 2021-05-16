@@ -12,7 +12,7 @@ This is the implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-R
   Python 3.7, numpy, cvxopt, scipy, heapq, networkx and other common packages.
 
 ### 2. How to use
-  **step 1**: Create a Map, then extract transaction data or make a data by yourself. For some transaction data without the sigma of link travel time, you can be generat them through the funtions in func.py, you can find the method you want in func.py or you can make your own method to generate sigma of link travel time;
+  **step 1**: Create a Map, then extract transaction data or make a data by yourself. For some transaction data without the sigma of link travel time, you can generate them through the funtions in func.py, you can find the method you want in func.py or you can make your own method to generate sigma of link travel time;
 
   **step 2**: Create a Xtate based on the Map that is created on **step 1**;
 
