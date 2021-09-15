@@ -25,7 +25,7 @@ This is the implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-R
    **step 6**: Start the training of the Agent, we need to set the training parameters num_iterations, obj(define RSP problem) and parameter(different parameter for different RSP problem). When the training is finished, we got a Policy. The more training times, the more accurate the Policy results will be.
 
 ### 3. Template
-  The following is an example of how to configure a DRL-Router：
+  The following is an example for how to configure a DRL-Router：
   ```Python
   import DRL_C51
   import func
