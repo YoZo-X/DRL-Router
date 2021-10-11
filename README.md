@@ -53,6 +53,6 @@ This is the implementation of DRL-Router on Python 3, Numpy, and Networkx. DRL-R
   agent.train_IS(2000, parameter=40, obj="mean-std")
   print("-----------shortest path-------------")
   agent.find_shortest_path(1, True)
-  print("-----------C51 path-------------")
+  print("--------------C51 path---------------")
   agent.find_path(1, 40, "mean-std", True)
   ```
